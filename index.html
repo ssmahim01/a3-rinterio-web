@@ -24,6 +24,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            'green-primary' : 'rgb(171, 239, 95)',
           },
         },
       },
@@ -37,6 +38,42 @@
   </style>
 </head>
 <body class="manrope-font">
-    
+    <header class="container mx-auto">
+        <!-- Navbar Start -->
+         <nav>
+
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <a href="#" class="flex items-center justify-center space-x-2">
+                  <div class="bg-green-primary px-3 py-2 rounded-full">
+                      <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
+                  </div>
+                  <h3 class="text-3xl font-extrabold"> Rinterio</h3>
+              </a>
+
+              <div class="sm:hidden bg-white border px-3 py-2 rounded-full ml-48">
+                <i class="fa-solid fa-bars text-lg"></i>
+              </div>
+              </div>
+
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                      <li class="hover:font-bold"><a>Home</a></li>
+                      <li class="hover:font-bold"><a>Services</a></li>
+                      <li class="hover:font-bold"><a>Portfolio</a></li>
+                      <li class="hover:font-bold"><a>Blogs</a></li>
+                      <li class="hover:font-bold"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end hidden sm:block space-x-4">
+                <i class="fa-solid fa-magnifying-glass bg-white border text-xl rounded-full btn p-3"></i>
+                <i class="fa-solid fa-cart-shopping bg-white border p-3 text-xl rounded-full btn"></i>
+              <a class="hover:cursor-pointer px-5 py-3 rounded-full bg-green-primary space-x-2"><span class="text-xl font-extrabold">Book Consult </span><i class="fa-solid fa-arrow-right bg-black p-2 -rotate-45 rounded-3xl text-white"></i></a>
+            </div>
+          </div>
+          </nav>
+
+          
+    </header>
 </body>
 </html>
