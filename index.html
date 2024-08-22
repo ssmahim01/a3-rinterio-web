@@ -26,6 +26,7 @@
             clifford: '#da373d',
             'green-primary' : 'rgb(171, 239, 95)',
             'different-green' : 'rgba(171, 239, 95, 0.5)',
+            'black-primary' : 'rgb(33, 33, 33)',
           },
         },
       },
@@ -49,7 +50,7 @@
                   <div class="bg-green-primary px-3 py-2 rounded-full">
                       <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
                   </div>
-                  <h3 class="text-3xl font-black"> Rinterio</h3>
+                  <h3 class="text-3xl text-black-primary font-black"> Rinterio</h3>
               </a>
 
               <div class="sm:hidden bg-white shadow-sm border px-3 py-1 rounded-full ml-44">
@@ -81,12 +82,12 @@
                 <img class="w-4/5 mx-auto" src="assets/banner.png" alt="A House Banner">
                 </div>
                 <div class="w-4/5 mx-auto space-y-6 text-center">
-                    <h2 class="text-3xl sm:text-6xl font-black">A barn house of this design has a striking appearance</h2>
+                    <h2 class="text-3xl sm:text-6xl text-black-primary font-black">A barn house of this design has a striking appearance</h2>
                     <p class="sm:w-11/12 mx-auto text-sm sm:text-base font-medium text-gray-600">The barn house captivates with it's blend of rustic charm and modern sophistication,featuring weathered wood,sleek metal accents,and large windows that flood the space with natural light.</p>
                     <div class="flex justify-center items-center">
 
                         <button class="px-20 sm:px-8 py-2 flex justify-center items-center bg-different-green rounded-full space-x-1 border border-green-primary">
-                            <h3 class="text-xl font-black">View Details </h3>
+                            <h3 class="text-xl text-black-primary font-black">View Details </h3>
                             <div class="bg-green-primary px-3 py-1 rounded-full">
                                 <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i>
                             </div>
@@ -95,5 +96,64 @@
                 </div>
           </div>
     </header>
+
+    <main>
+      <!-- About Us Section Start -->
+
+      <section class="mb-20 bg-slate-100 py-16">
+
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
+
+        <!-- About Us Text Content -->
+        <div class="w-11/12 mx-auto sm:w-1/2 sm:p-16 flex flex-col justify-center items-center sm:items-start space-y-5">
+
+          <div class="relative">
+
+            <div class="absolute right-5 bottom-14 w-40 sm:block hidden ml-0">
+              <img src="assets/Vector.png" alt="An Arrow">
+            </div>
+
+            <button class="rounded-3xl text-black-primary font-semibold px-5 py-2 bg-white"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+          </div>
+
+         <div class="text-center sm:text-left space-y-4 pb-4">
+
+           <h3 class="text-2xl sm:text-4xl text-black-primary font-extrabold">We design thoughtful,<br>liveable spaces</h3>
+           <p class="w-11/12 text-sm font-semibold text-gray-600 pt-3">Our design has creativity and special things that you may like.We make any design very carefully and wisely.Any house of our design has liveable spaces,stay strong year to year.</p>
+         </div>
+
+         <div class="flex sm:items-center gap-8 p-6 bg-white shadow-sm rounded-2xl">
+
+        
+            <div class="w-12 sm:w-20">
+              <img class="sm:w-full" src="assets/commercial.png" alt="Commercial Design">
+            </div>
+            <div class="w-4/5 space-y-2">
+              <h5 class="text-xl text-black-primary font-extrabold">Commercial</h5>
+              <p class="text-sm text-gray-500 font-semibold">Commercial building and anything can make profit if anyone think wisely.Continue some task step by step,can achieve success.</p>
+            </div>
+           
+        </div>
+
+         <div class="flex sm:items-center gap-8 p-6 bg-white shadow-sm rounded-2xl">
+        
+            <div class="w-12 sm:w-20">
+              <img class="sm:w-full" src="assets/residential.png" alt="Residential Design">
+            </div>
+            <div class="w-4/5 space-y-2">
+              <h5 class="text-xl text-black-primary font-extrabold">Residential</h5>
+              <p class="text-sm text-gray-500 font-semibold">Residential is a peaceful area.And residential house hasn't any profit,but anyone like to build his own residential house.</p>
+            </div>
+           
+        </div>
+        </div>
+
+        <!-- About Us Image Content -->
+        <div class="sm:w-1/2 w-11/12 mt-8 sm:mt-0">
+        <img class="h-60 w-full sm:h-full" src="assets/Rectangle.png" alt="A Building Design">
+        </div>
+        </div>
+      </section>
+    </main>
 </body>
 </html>
