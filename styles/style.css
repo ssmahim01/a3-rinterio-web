@@ -1,0 +1,8 @@
+/* Next Project Section Background Image */
+
+.project-bg{
+    background-image:url('../assets/bg.jpg');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+}
