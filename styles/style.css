@@ -1,3 +1,9 @@
+/* Header Background Image */
+
+.header-bg{
+    background-image:linear-gradient(0deg, rgb(255, 255, 255), rgba(255, 255, 255, 0) 100%);
+}
+
 /* Next Project Section Background Image */
 
 .project-bg{
