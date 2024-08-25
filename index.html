@@ -45,6 +45,19 @@
 
   <!-- CSS Link -->
   <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Simple JavaScript -->
+
+  <script>
+    function message(){
+      var a = prompt("Enter Your Full Name");
+      alert(a + " Welcome");
+
+      var b = prompt("Enter Your Age");
+      alert("Your Age Is " + b + " Now You Can View");
+    }
+  </script>
+
 </head>
 <body class="manrope-font">
     <header class="container mx-auto sm:mb-28">
@@ -64,12 +77,12 @@
                 <i class="fa-solid fa-bars text-lg"></i>
               </div>
              </div>
-            <div class="navbar-center hidden lg:flex mr-28">
+            <div class="navbar-center hidden lg:flex mr-24">
               <ul class="menu menu-horizontal px-1">
                       <li class="hover:font-bold"><a href="#">Home</a></li>
                       <li class="hover:font-bold"><a href="#next-project">Services</a></li>
                       <li class="hover:font-bold"><a href="#latest">Portfolio</a></li>
-                      <li class="hover:font-bold"><a href="#footer">Blogs</a></li>
+                      <li class="hover:font-bold"><a href="#team">Blogs</a></li>
                       <li class="hover:font-bold"><a href="#footer">Contact Us</a></li>
               </ul>
             </div>
@@ -89,11 +102,11 @@
                 <img class="sm:w-3/4 w-2/3 mx-auto" src="assets/banner.png" alt="A House Banner">
                 </div>
                 <div class="w-4/5 mx-auto space-y-6 text-center">
-                    <h2 class="text-3xl sm:text-6xl text-black-primary font-black">A barn house of this design has a striking appearance</h2>
+                    <h1 class="text-3xl sm:text-6xl text-black-primary font-black">A barn house of this design has a striking appearance</h1>
                     <p class="sm:w-11/12 mx-auto text-sm sm:text-base font-medium text-gray-600">The barn house captivates with it's blend of rustic charm and modern sophistication,featuring weathered wood,sleek metal accents,and large windows that flood the space with natural light.</p>
 
                     <div class="flex justify-center items-center">
-                                <a href="#latest">
+                                <a href="#about-us" onclick="message()">
                                   <button class="px-20 sm:px-8 py-2 flex justify-center items-center bg-different-green rounded-full space-x-1 border border-green-primary">
                               <h3 class="text-xl text-black-primary font-black">View Details </h3>
                               <div class="bg-green-primary px-3 py-1 rounded-full">
@@ -109,7 +122,7 @@
     <main class="bg-slate-100">
       <!-- About Us Section Start -->
 
-      <section class="sm:py-12 py-10">
+      <section class="sm:py-12 py-10" id="about-us">
 
         <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center">
 
@@ -186,7 +199,7 @@
 
            <!-- Works Card Content -->
 
-           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-0 sm:mt-8 mt-3">
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-2 sm:mt-8 mt-3">
 
             <!-- Card 1 -->
              <div class="space-y-4 p-7 bg-red-200 rounded-2xl w-11/12 mx-auto">
@@ -340,7 +353,7 @@
 
       <!-- Team Section Start -->
 
-      <section class="container mx-auto pt-5">
+      <section class="container mx-auto pt-5" id="team">
         <div class="sm:p-16">
           <!-- Team Text Content -->
            <div class="sm:w-2/3 w-11/12 mx-auto flex flex-col justify-center items-center space-y-4">
@@ -417,21 +430,21 @@
 
            <!-- Next Project Form -->
 
-           <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-5 w-11/12 mx-auto pb-8 sm:pb-0">
+           <form class="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-5 w-11/12 mx-auto pb-8 sm:pb-0">
 
-              <input type="text" placeholder="First Name*" class="w-full h-14 rounded-full pl-5 text-gray-500 font-semibold">
-              <input type="text" placeholder="Last Name*" class="w-full h-14 rounded-full pl-5 text-gray-500 font-semibold">
-              <input type="number" name="" id="" placeholder="Phone Number*" class="h-14 rounded-full pl-5 text-gray-500 font-semibold">
-              <input type="email" name="" id="" placeholder="Email Number*" class="h-14 rounded-full pl-5 text-gray-500 font-semibold">
+              <input type="text" placeholder="First Name*" class="w-full h-14 rounded-full pl-5 text-gray-500 font-semibold" required>
+              <input type="text" placeholder="Last Name*" class="w-full h-14 rounded-full pl-5 text-gray-500 font-semibold" required>
+              <input type="number" name="" id="" placeholder="Phone Number*" class="h-14 rounded-full pl-5 text-gray-500 font-semibold" required>
+              <input type="email" name="" id="" placeholder="Email Number*" class="h-14 rounded-full pl-5 text-gray-500 font-semibold" required>
             <textarea name="" id="" placeholder="Write your message here" class="h-60 rounded-3xl pl-5 pt-3 text-gray-500 font-semibold sm:col-span-2"></textarea>
 
-                <button class="sm:w-[1055px] px-20 py-2 flex justify-center items-center bg-green-primary rounded-full space-x-2 mt-2">
+                <button class="sm:w-[1055px] px-20 py-2 flex justify-center items-center bg-green-primary rounded-full space-x-2 mt-2" type="submit">
                   <h3 class="text-xl text-black-primary font-black">Send Mail </h3>
                   <div class="bg-black px-3 py-1 rounded-full">
                       <i class="fa-solid fa-arrow-right text-lg text-white -rotate-45"></i>
                   </div>
                 </button>
-           </div>
+           </form>
           </div>
           
         </section>
@@ -441,7 +454,7 @@
     <!-- Footer Start -->
 
     <footer class="bg-footer-bg" id="footer">
-      <div class="sm:w-1/2 mx-auto space-y-6 py-20">
+      <div class="sm:w-1/2 mx-auto space-y-4 py-20">
 
         <!-- Footer Title -->
 
